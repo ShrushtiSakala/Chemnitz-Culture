@@ -79,8 +79,6 @@ DATABASE_URL=postgresql://postgres:<your-password>@localhost:5432/chemnitzdb
 PORT=3000
 ```
 
-> 🔒 **Never commit real passwords or this `.env` file to GitHub!**
-
 #### Enable PostGIS in PostgreSQL
 
 ```sql
@@ -132,16 +130,6 @@ npm start
 
 ---
 
-## ✅ To Do
-
-- [x] GeoJSON + CSV importer
-- [x] REST API endpoints
-- [x] Map + Site List
-- [ ] User favorites and login (optional)
-- [ ] Public transport proximity
-- [ ] Mobile-first UI
-
----
 
 ## 📜 License
 
@@ -152,5 +140,4 @@ This project is licensed under the MIT License.
 ## 👤 Author
 
 - **Shrushti Sakala**  
-  📧 shrushtidsakala@gmail.com  
-  🔗 [LinkedIn](https://www.linkedin.com/in/shrushtisakala) | [GitHub](https://github.com/ShrushtiSakala)
+  📧 shrushtisd19@gmail.com  
