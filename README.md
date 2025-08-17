@@ -39,7 +39,7 @@ chemnitz-cultural-app/
 │   ├── db.js
 │   ├── server.js
 │   ├── index.js
-│   └── .env            # Environment variables
+│   └── .env.example    # Environment variable example (not secrets)
 ├── data/               # GeoJSON + CSV files
 │   ├── Chemnitz.geojson
 │   ├── Sachsen.geojson
@@ -71,12 +71,17 @@ npm install
 
 #### Create `.env` file in `/server`
 
+Create a `.env` file based on the example below:
+
 ```env
-DATABASE_URL=postgresql://postgres:add1234@localhost:5432/chemnitzdb
+# server/.env
+DATABASE_URL=postgresql://postgres:<your-password>@localhost:5432/chemnitzdb
 PORT=3000
 ```
 
-#### Run PostgreSQL + Enable PostGIS
+> 🔒 **Never commit real passwords or this `.env` file to GitHub!**
+
+#### Enable PostGIS in PostgreSQL
 
 ```sql
 CREATE DATABASE chemnitzdb;
